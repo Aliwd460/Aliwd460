@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Urdu Typing Tool Online</title>
+<meta name="description" content="Type in Urdu online. Copy or use text anywhere.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: 'Noto Nastaliq Urdu', Arial, sans-serif; background:#f4f6f8; margin:0; padding:0; direction:rtl; }
+.container { max-width:800px; margin:30px auto; background:#fff; padding:20px; border-radius:8px; }
+textarea { width:100%; height:200px; padding:10px; font-size:18px; }
+button { margin-top:10px; padding:10px 20px; font-size:16px; cursor:pointer; background:#007bff; color:#fff; border:none; border-radius:5px; }
+footer { text-align:center; margin-top:20px; font-size:14px; }
+a { color:#007bff; text-decoration:none; }
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1>Urdu Typing Tool</h1>
+<p>Type your text in Urdu below:</p>
+<textarea id="urduText" placeholder="یہاں لکھیں..."></textarea>
+<br>
+<button onclick="copyText()">Copy Text</button>
+<p id="msg" style="color:green;"></p>
+<p><a href="index.html">← Back to Tools Hub</a></p>
+<footer>© 2026 Free Tools</footer>
+
+<script>
+function copyText(){
+let text = document.getElementById("urduText");
+text.select();
+navigator.clipboard.writeText(text.value);
+document.getElementById("msg").innerText="Text copied!";
+}
+</script>
+
+</div>
+</body>
+</html>
