@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Free Online Tools Hub</title>
+<meta name="description" content="Word Counter, Urdu Typing Tool & more online tools for free.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: Arial, sans-serif; background:#f4f6f8; margin:0; padding:0; }
+header { background:#007bff; color:#fff; padding:15px; text-align:center; }
+.container { max-width:900px; margin:20px auto; padding:20px; background:#fff; border-radius:8px; }
+.tool-box { display:flex; flex-wrap:wrap; gap:20px; margin-top:20px; justify-content:center; }
+.tool { flex:1 1 250px; background:#eef2f5; padding:20px; border-radius:8px; text-align:center; transition:0.3s; cursor:pointer; }
+.tool:hover { background:#dce6f1; }
+.tool a { text-decoration:none; color:#007bff; font-weight:bold; font-size:18px; }
+footer { text-align:center; margin-top:20px; font-size:14px; }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Free Online Tools Hub</h1>
+<p>Word Counter & Urdu Typing Tool Online</p>
+</header>
+
+<div class="container">
+<div class="tool-box">
+<div class="tool"><a href="wordcounter.html">Word Counter Tool</a></div>
+<div class="tool"><a href="urdu-typing.html">Urdu Typing Tool</a></div>
+</div>
+</div>
+
+<footer>
+© 2026 Free Tools | <a href="privacy.html">Privacy Policy</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact</a>
+</footer>
+
+</body>
+</html>
