@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Word Counter Tool – Free Online</title>
+<meta name="description" content="Free online word counter tool. Count words, characters, sentences instantly.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f8;
+    margin:0;
+    padding:0;
+}
+.container{
+    max-width:800px;
+    margin:30px auto;
+    background:#fff;
+    padding:20px;
+    border-radius:8px;
+}
+textarea{
+    width:100%;
+    height:200px;
+    padding:10px;
+    font-size:16px;
+}
+.stats{
+    margin-top:15px;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+.box{
+    background:#eef2f5;
+    padding:10px 15px;
+    border-radius:5px;
+    font-size:16px;
+}
+footer{
+    text-align:center;
+    margin-top:20px;
+    font-size:14px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Online Word Counter Tool</h1>
+<p>Paste your text below and get instant word & character count.</p>
+<textarea id="text" oninput="countText()" placeholder="Type or paste text here..."></textarea>
+<div class="stats">
+<div class="box">Words: <span id="words">0</span></div>
+<div class="box">Characters: <span id="chars">0</span></div>
+<div class="box">Sentences: <span id="sentences">0</span></div>
+</div>
+<footer>
+© 2026 Free Tools | Privacy Policy | Contact
+</footer>
+<script>
+function countText(){
+    let text = document.getElementById("text").value;
+    let words = text.trim().split(/\s+/).filter(Boolean).length;
+    let chars = text.length;
+    let sentences = text.split(/[.!?]/).filter(Boolean).length;
+    document.getElementById("words").innerText = words;
+    document.getElementById("chars").innerText = chars;
+    document.getElementById("sentences").innerText = sentences;
+}
+</script>
+</div>
+</body>
+</html>
